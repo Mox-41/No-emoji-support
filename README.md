@@ -1,3 +1,4 @@
+Hello , 
 
 Let's try this code
 ```js
@@ -93,3 +94,7 @@ client.login('token here')
 let's see
 
 ![logo](http://i8.ae/0dMp)
+
+Yes, the problem has been fixed emojis not being rendered 
+
+Good Bye.
