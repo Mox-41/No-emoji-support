@@ -62,4 +62,34 @@ main();
 Let's edit the code
 
 ```js
-``
+const Discord = require("discord.js");
+const client = new Discord.Client();
+const Canvas = require("canvas");
+const prefix = "!"
+const { fillTextWithTwemoji } = require('node-canvas-with-twemoji-and-discord-emoji');
+
+client.on("message", async message => {
+if ( message.content.startsWith(prefix + "darw") ){
+// image link [ http://i8.ae/VvqI ]
+let user_name = `${message.author.username}`
+const canvas = Canvas.createCanvas(100 , 50);
+const ctx = canvas.getContext('2d');
+const background = await Canvas.loadImage("http://i8.ae/VvqI");
+ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
+ctx.font = "bold 20px kathen";
+ctx.fontSize = "5px";
+ctx.fillStyle = "#ffffff";
+
+await fillTextWithTwemoji(ctx, user_name, canvas.width / 4.8, canvas.height / 1.5); 
+
+const attachment = new Discord.MessageAttachment(canvas.toBuffer());
+message.channel.send(attachment)
+}
+});
+
+client.login('token here')
+
+```
+let's see
+
+![logo](http://i8.ae/0dMp)
