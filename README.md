@@ -1,3 +1,2 @@
-# Not rendering the emoji. Is this possible?
-
+# Not rendering the emoji. 
 
