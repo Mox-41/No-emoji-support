@@ -1,2 +1,1 @@
-# No-emoji-support
-Emoji are not supported in canvas
+# Emoji are not supported in canvas
