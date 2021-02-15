@@ -1,1 +1,3 @@
-# Emoji are not supported in canvas
+# Not rendering the emoji. Is this possible?
+
+
